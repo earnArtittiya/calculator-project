@@ -17,8 +17,14 @@ const useStyles = makeStyles((theme) => ({
   },
   notchedOutline: {
     borderWidth: 3,
-    borderColor: "#ef9a9a !important",
+    borderColor: "#4a148c !important",
   },
+  paperContainer: {
+    height:" 100%",
+    width:"100%",
+    backgroundImage: `url(${"images/17.jpg"})`
+},
+
  
 }));
 export default function Calculator() {
@@ -53,7 +59,7 @@ export default function Calculator() {
     <React.Fragment>
       <Typography component="div" style={{ height: "100vh" }}>
         <Box
-          bgcolor="#ffcdd2"
+          className={classes.paperContainer}
           width="100%"
           height="100%"
           display="flex"
